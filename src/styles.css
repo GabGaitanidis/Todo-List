@@ -1,0 +1,209 @@
+:root{
+  --bg-color1: #cacfda;
+  --bg-color2: #cacfda;
+  --bg-color3: rgb(105, 105, 236)
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr ;
+}
+.sidebar{
+  grid-row: 1 / 4;
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+  flex-direction: column;
+  background-color: var(--bg-color1);
+  border-right: 4px solid var(--bg-color3);
+  gap: 14px;
+
+  padding: 20px;
+  }
+  
+
+  .main {
+    padding-top: 10px;
+    padding-left: 5%;
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    background-image: linear-gradient(
+        90deg,
+        transparent 50px,
+        #ffb4b8 50px,
+        #ffb4b8 52px,
+        transparent 52px
+      ),
+      linear-gradient(#e1e1e1 0.1em, transparent 0.1em);
+    background-size: 100% 30px;
+  }
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 3%;
+  align-items: center;
+  background-color:var(--bg-color2);
+  border-bottom: 4px solid var(--bg-color3);
+}
+.close-btn-h1{
+  display: flex;
+  justify-content: space-between;
+}
+dialog{
+  margin: 20% auto;
+  border: none;
+  padding: 1%;
+}
+.create-project {
+  cursor: pointer;
+  padding: 13px 40px;
+  border-radius: 20px;
+  border:3px solid rgb(36, 36, 125);
+  background-color: transparent;
+  color: white;
+  transition: all 0.25s;
+  font-size: 25px;
+}
+.create-project:hover{
+  background-color: rgb(36, 36, 125);
+}
+img{
+  height: 50px;
+
+}
+.create-task {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(180deg, rgb(20, 123, 167) 0%, rgb(36, 78, 157) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #19259598;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+  transition: all 0.20s;
+}
+
+.create-task svg {
+  margin-right: 6px;
+}
+
+.create-task {
+  box-shadow: 0 0.5em 1.5em -0.5em #19259598;
+}
+
+.create-task {
+  box-shadow: 0 0.3em 1em -0.5em #19259598;
+}
+.display-project-name{
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+.create-task:hover{
+  opacity: 0.7;
+}
+.buttons{
+  background-color: #aeaeae;
+  border: none;
+  margin: 10px 0px;
+  font-size: 25px;
+  padding: 14px ;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.tasks {
+  border-radius: 14px;
+  font-size: 21px;
+  background-color: white;
+}
+
+
+th, td {
+  display: flex;
+  border: 2px solid black; /* This will add a solid black border to each table cell (th and td) */
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  width: 75vw;
+}
+
+.delPro {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+#close-btn{
+  position: relative;
+  left: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  margin: 20px;
+}
+.sidebar-btns{
+  grid-row: 2;
+}
+.dialog-task{
+  margin: 16% auto;
+  padding: 20px;
+  font-size: 26px;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+}
+.input label{
+  margin-bottom: 1px;
+}
+.input input{
+  padding: 5px;
+}
+#btn, #edit-btn {
+  border: 2px solid #4eea2f;
+  background-color: #4eea2f;
+  border-radius: 0.9em;
+  padding: 5px;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+  margin-top: 10px;
+}
+ 
+#btn span , #edit-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+}
+ 
+.btn-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-img {
+  border: none;
+  background-color: transparent;
+}

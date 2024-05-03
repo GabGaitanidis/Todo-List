@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO list</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <button class="create-project">Create Project</button>
+      <div class="sidebar-btns"></div>
+    </div>
+    <div class="header">
+      <div class="display-project-name">TODO-List</div>
+      <button class="create-task">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg>
+        <span>Add</span>
+      </button>
+    </div>
+    <div class="main"></div>
+    <dialog class="dialog-task">
+      <div class="close-btn-h1">
+        <h1 class="h1-dialog">Add task</h1>
+        <Button id="close-btn">X</Button>
+      </div>
+          <div class="input-area">
+            
+            <div class="input1 input">
+              <label for="title">Title</label>
+              <input type="text" id="title" >
+            </div>
+            <div class="input2 input">
+              <label for="des">Description</label>
+              <input type="text" id="des" >
+            </div>
+            <div class="input3 input">
+              <label for="select">Priority</label>
+              <select name="" id="select">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+            <button autofocus id="btn">Add</button>
+          </div>
+    </dialog>
+    <dialog class="dialog-project">
+      <div class="input-area-project">
+        <input type="text" id="title-pro">
+        <button class="close-btn-pro">close</button>
+        <button autofocus class="create-pro">create</button>
+      </div>
+    </dialog>
+    
+    <dialog class="dialog-task-edit">
+      <div class="close-btn-h1">
+        <h1 class="h1-dialog">Add task</h1>
+        <Button id="close-btn-edit">X</Button>
+      </div>
+          <div class="input-area">
+            
+            <div class="input1">
+              <label for="title-edit">Title</label>
+              <input type="text" id="title-edit" >
+            </div>
+            <div class="input2">
+              <label for="des-edit">Description</label>
+              <input type="text" id="des-edit" >
+            </div>
+            <div class="input3">
+              <label for="select-edit">Priority</label>
+              <select name="" id="select-edit">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button autofocus id="edit-btn">
+              <span>
+                 Edit
+              </span>
+            </button>
+          </div>
+    </dialog>
+  </div>
+  
+</body>
+</html>
